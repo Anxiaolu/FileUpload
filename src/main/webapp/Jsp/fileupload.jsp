@@ -9,22 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>FileUpload</title>
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <script src="js/jquery-1.11.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(function(){
-                $(".thumbs a").click(function(){
-                    var largePath = $(this).attr("href");
-                    var largeAlt = $(this).attr("title");
-                    $("largeimg").attr({
-                        src:largePath,
-                        alt:largeAlt
-                    });
-                    return false;
-                });
-            });
-        </script>
+        <script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+        <script src="js/fileupload.js" type="text/javascript"></script>
     </head>
     <body>
         <h1>File Upload!</h1>
@@ -35,5 +23,9 @@
             <a href="img/04.jpg" tilte="IMG04"><img src="img/04.jpg"/></a>
             <a href="img/05.jpg" tilte="IMG05"><img src="img/05.jpg"/></a>
         </p>
+        
+        <form action="">
+            <input id="myfile" name="myfile" type="file"/>
+        </form>
     </body>
 </html>

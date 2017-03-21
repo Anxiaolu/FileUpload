@@ -23,9 +23,9 @@
             <a href="img/04.jpg" tilte="IMG04"><img src="img/04.jpg"/></a>
             <a href="img/05.jpg" tilte="IMG05"><img src="img/05.jpg"/></a>
         </p>
-        
-        <form action="">
-            <input id="myfile" name="myfile" type="file"/>
-        </form>
+        <img id="pic" src="img/01.jpg" width="80" height="80">
+        <form action="Uploadservlet.do" method="post" enctype="multipart/form-data">
+            Upload File:<input id="upload" accept="img/*" name="myfile" type="file" onchange="showPreview(this)" />
+        </form>        
     </body>
 </html>
